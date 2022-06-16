@@ -4,4 +4,8 @@
 
     $_SESSION['logMemoria'] .= htmlspecialchars("<INICIO $transacao>") . "<br>";
 
-    echo ($_SESSION['logMemoria']);
+    echo "
+        <script>
+            alert('Transação inciada!')
+        </script>
+    ";

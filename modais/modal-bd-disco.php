@@ -3,7 +3,7 @@
 
     echo '
         <div class="modal-header bg-primary text-white">
-            <h6 class="modal-title">BD BUFFER</h6>
+            <h6 class="modal-title">BD DISCO</h6>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -12,7 +12,7 @@
                 <div class="form-group col-12">';
 
     foreach($_SESSION['bdDisco'] as $id => $umFuncionario){
-        echo '<b>Id:</b> '.$id.' <b>Nome:</b> '.$umFuncionario['nome'].' <b>Salário:</b> '.$umFuncionario['salario'].'<br>';
+        echo '<b>Id:</b> '.@$id.' <b>Nome:</b> '.@$umFuncionario['nome'].' <b>Salário:</b> '.@$umFuncionario['salario'].'<br>';
     }
                     
     echo            

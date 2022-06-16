@@ -5,4 +5,10 @@
     $_SESSION['logMemoria'] .= htmlspecialchars("<FIM $transacao>") . "<br>";
     $_SESSION['logDisco'] = $_SESSION['logMemoria'];
 
-    echo ($_SESSION['logMemoria']);
+    $_SESSION['bdDisco'] = $_SESSION['bdMemoria'];
+
+    echo "
+        <script>
+            alert('Commit realizado!')
+        </script>
+    ";

@@ -1,4 +1,5 @@
 <?php
+    ini_set('session.gc_maxlifetime', 3600);
     session_start();
     $_SESSION['logMemoria'] = null;
     $_SESSION['logDisco'] = null;
@@ -91,7 +92,7 @@
                             </div>
 
                             <div class="col-2">
-                                <button type="button" class="btn btn-success">Executar</button>
+                                <button type="button" class="btn btn-success update">Executar</button>
                             </div>
                         </div>
 
@@ -102,12 +103,8 @@
 
         <hr>        
         <h5>Simular</h5>
-        <!-- <button type="button" class="btn btn-secondary" onclick="simular('transacao')">Secondary</button> -->
         <button type="button" class="btn btn-success insereCheckpoint">Checkpoint</button>
-        <button type="button" class="btn btn-danger">Falha</button>
-        <!-- <button type="button" class="btn btn-warning" onclick="simular('transacao')">Recovery</button>
-        <button type="button" class="btn btn-info" onclick="simular('transacao')">Comandos</button>
-        <button type="button" class="btn btn-dark" onclick="simular('transacao')">Dark</button> -->
+        <button type="button" class="btn btn-danger falha">Falha</button>
         <hr>        
         <h5>Visualizar</h5>
         <button type="button" class="btn btn-primary visualizarBdBuffer">Banco Buffer</button>
