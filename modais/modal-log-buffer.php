@@ -11,7 +11,7 @@
             <div class="form-row">
                 <div class="form-group col-12">
                     '.$_SESSION['logMemoria'].'
-                </div>				
+                </div>
 
                 <div class="mensagem-modal"></div>
             </div>

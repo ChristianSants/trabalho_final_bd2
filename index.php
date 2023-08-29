@@ -36,7 +36,7 @@
 </head>
 <body>
 
-    <?php include 'include/menu.php'; ?>
+    <?php include_once 'include/menu.php'; ?>
 
     <div class="container mt-4">
         <div class="row">

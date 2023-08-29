@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 class Conexao{
     protected function conectaMySQL(){
-        $host = 'localhost'; 
+        $host = 'localhost';
         $dbname = 'bd2';
         $user = 'root';
         $pass = '';
@@ -22,4 +22,3 @@ class Conexao{
     }
     
 }
-?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class FuncionarioDAO extends Conexao{
 
@@ -6,11 +6,11 @@ class FuncionarioDAO extends Conexao{
         $sql = "
             UPDATE funcionarios
             SET salario = ?
-            WHERE id_funcionario = ? 
+            WHERE id_funcionario = ?
         ";
         
         $pdo = $this->conectaMySQL();
-        $prepare = $pdo->prepare($sql);   
+        $prepare = $pdo->prepare($sql);
 
         $prepare->bindValue(1, $salario);
         $prepare->bindValue(2, $id);
@@ -40,8 +40,4 @@ class FuncionarioDAO extends Conexao{
         return $array;
     }
 
-
-
 }
-
-?>

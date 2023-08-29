@@ -12,11 +12,12 @@
                 <div class="form-group col-12">';
 
     foreach($_SESSION['bdDisco'] as $id => $umFuncionario){
-        echo '<b>Id:</b> '.@$id.' <b>Nome:</b> '.@$umFuncionario['nome'].' <b>Salário:</b> '.@$umFuncionario['salario'].'<br>';
+        echo '<b>Id:</b> '.@$id.' <b>Nome:</b> '
+             .@$umFuncionario['nome'].' <b>Salário:</b> '.@$umFuncionario['salario'].'<br>';
     }
                     
-    echo            
-                '</div>				
+    echo
+                '</div>
 
                 <div class="mensagem-modal"></div>
             </div>
